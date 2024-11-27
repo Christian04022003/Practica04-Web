@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+</head>
+<body>
+    <h1>Producto de una lista variable</h1>
+    <script>
+        let product = 1; 
+        let sentinel = -1; 
+        let number;
+
+
+        number = parseInt(prompt("Ingrese un número positivo (o -1 para salir):"));
+
+
+        while (number !== sentinel) {
+            if (number > 0) { 
+                product *= number; 
+            } else if (number !== sentinel) {
+                alert("Solo números positivos."); // Advertencia para números no válidos
+            }
+
+            number = parseInt(prompt("Ingrese otro número positivo (o -1 para salir):"));
+        }
+
+        alert(`Producto total: ${product}`);
+        console.log(`Producto total: ${product}`);
+    </script>
+</body>
+</html>

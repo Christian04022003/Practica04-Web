@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio7</title>
+</head>
+<body>
+    <h1>Suma de los Recíprocos de los Primeros n Números Naturales</h1>
+    <script>
+
+        let n = parseInt(prompt("Ingrese el valor de n (cantidad de números naturales):"));
+
+
+        if (n > 0) {
+            let sum = 0; 
+
+            for (let i = 1; i <= n; i++) {
+                sum += 1 / i; 
+            }
+
+            alert(`La suma de los recíprocos de los primeros ${n} números naturales es: ${sum}`);
+            console.log(`La suma de los recíprocos de los primeros ${n} números naturales es: ${sum}`);
+        } else {
+            alert("Por favor, ingrese un valor válido para n (n > 0).");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación de Arrays</title>
+</head>
+<body>
+    <h1>Manipulación de Arrays</h1>
+    <script>
+
+        let daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'];
+
+        daysOfWeek.shift(); 
+        daysOfWeek.pop();   
+
+        console.log("Después de eliminar el primero y el último:", daysOfWeek);
+        alert("Después de eliminar el primero y el último: " + daysOfWeek);
+
+
+        daysOfWeek.push('Sat', 'Sun');
+
+        console.log("Después de agregar 'Sat' y 'Sun':", daysOfWeek);
+        alert("Después de agregar 'Sat' y 'Sun': " + daysOfWeek);
+    </script>
+</body>
+</html>

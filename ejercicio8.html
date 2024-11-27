@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio8</title>
+</head>
+<body>
+    <h1>Juego de Suma</h1>
+    <script>
+        let correctAnswer = false; 
+
+        while (!correctAnswer) {
+
+            let num1 = Math.floor(Math.random() * 10) + 1;
+            let num2 = Math.floor(Math.random() * 10) + 1;
+
+            let sum = num1 + num2;
+
+
+            let userAnswer = parseInt(prompt(`¿Cuál es la suma de ${num1} + ${num2}?`));
+
+            if (userAnswer === sum) {
+                alert("¡Correcto! 😃");
+                correctAnswer = true; 
+            } else {
+                alert("Incorrecto. Intenta de nuevo. 😅");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+</head>
+<body>
+    <h1>Verifica Año Bisiesto</h1>
+    <script>
+
+        function isBisiesto(year) {
+
+            if (year % 400 === 0) {
+                return true;
+            } else if (year % 100 === 0) {
+                return false;
+            } else if (year % 4 === 0) {
+                return true;
+            } else {
+                return false; 
+            }
+        }
+
+
+        let year = parseInt(prompt("Año:"));
+
+
+        if (isBisiesto(year)) {
+            alert(`${year} es un año bisiesto.`);
+            console.log(`${year} es un año bisiesto.`);
+
+        } else {
+            console.log(`${year} no es un año bisiesto.`);
+            alert(`${year} no es un año bisiesto.`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio9</title>
+</head>
+<body>
+    <h1>Par o Impar</h1>
+    <script>
+        let countPares = 0; // Contador de números pares
+
+        while (true) {
+            let input = prompt("Ingrese un número (o escriba 'stop' para salir):");
+
+
+            if (input.toLowerCase() === "stop") {
+                alert(`Programa finalizado. Total de números pares: ${countPares}`);
+                break; 
+            }
+
+
+            let number = parseInt(input);
+
+            if (isNaN(number)) {
+                alert("Por favor, ingrese un número válido o 'stop' para salir.");
+                continue; 
+            }
+
+            if (number % 2 === 0) {
+                alert("Par");
+                countPares++; 
+            } else {
+                alert("Impar");
+            }
+        }
+    </script>
+</body>
+</html>

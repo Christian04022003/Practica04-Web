@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio4</title>
+</head>
+<body>
+    <h1>Número Aleatorio</h1>
+    <script>
+
+        let numberRandom = Math.floor(Math.random() * 10) + 1;
+
+
+        let numberUser = parseInt(prompt("Adivina un número entre 1 y 10:"));
+
+
+        while (numberRandom !== numberUser) {
+            if (numberUser < numberRandom) {
+                alert("El número es mayor. Intenta de nuevo.");
+            } else if (numberUser > numberRandom) {
+                alert("El número es menor. Intenta de nuevo.");
+            }
+            numberUser = parseInt(prompt("Adivina un número entre 1 y 10:"));
+        }
+
+
+        alert(`¡Felicidades! Adivinaste el número: ${numberRandom}`);
+    </script>
+</body>
+</html>

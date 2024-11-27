@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3</title>
+</head>
+<body>
+    <h1>Raíz Cuadrada</h1>
+    <script>
+        let sentinel = -1; 
+        let number; 
+        let root; 
+
+        
+        number = parseInt(prompt("Ingrese un número positivo (o -1 para salir):"));
+
+
+        while (number !== sentinel) {
+            if (number >= 0) {
+                root = Math.sqrt(number); // Calcular raíz cuadrada
+                alert(`Raíz cuadrada de ${number}: ${root}`);
+            } else {
+                alert("Solo Números positivos.");
+            }
+
+
+            number = parseInt(prompt("Ingrese otro número positivo (o -1 para salir):"));
+        }
+
+        alert("Gracias :)");
+    </script>
+</body>
+</html>
